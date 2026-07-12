@@ -4,104 +4,244 @@ NBA_AZUL = "#17408B"
 NBA_VERMELHO = "#C9082A"
 NBA_BRANCO = "#FFFFFF"
 NBA_PRETO = "#0A0A0A"
+NBA_CARD = "#0F1117"
 
 
 def aplicar_tema():
     st.markdown(
         f"""
         <style>
+        :root {{
+            --nba-blue: {NBA_AZUL};
+            --nba-red: {NBA_VERMELHO};
+            --nba-white: {NBA_BRANCO};
+            --nba-black: {NBA_PRETO};
+            --nba-card: {NBA_CARD};
+            --nba-muted: #C9CED8;
+        }}
+
         .stApp {{
-            background: {NBA_PRETO};
-            color: {NBA_BRANCO};
+            background:
+                radial-gradient(circle at top center, rgba(23, 64, 139, 0.18) 0%, rgba(10, 10, 10, 0.0) 34%),
+                var(--nba-black);
+            color: var(--nba-white);
         }}
 
         [data-testid="stHeader"] {{
             background: rgba(10, 10, 10, 0.92);
         }}
 
-        [data-testid="stSidebar"] {{
-            background: linear-gradient(180deg, #17408B 0%, #0f2d63 100%);
-            border-right: 1px solid rgba(255,255,255,0.08);
+        #MainMenu {{
+            visibility: hidden;
         }}
 
-        [data-testid="stSidebar"] .stButton > button {{
-            background: #C9082A;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            padding: 0.65rem 0.9rem;
-            font-weight: 700;
-            box-shadow: 0 8px 18px rgba(0,0,0,.25);
-        }}
-
-        [data-testid="stSidebar"] .stButton > button:hover {{
-            background: #a80723;
-            color: white;
-            border: none;
+        footer {{
+            visibility: hidden;
         }}
 
         .block-container {{
             max-width: 1280px;
-            padding-top: 2.2rem;
+            padding-top: 2.1rem;
             padding-bottom: 3rem;
+        }}
+
+        .hero-logo {{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.2rem;
+            margin-bottom: 0.6rem;
+        }}
+
+        .hero-logo img {{
+            max-width: 98px;
+            filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.45));
+        }}
+
+        .main-title {{
+            text-align: center;
+            color: white;
+            font-size: clamp(2rem, 4vw, 3.1rem);
+            line-height: 1.05;
+            font-weight: 900;
+            letter-spacing: -0.045em;
+            margin: 0.15rem 0 0.45rem 0;
+        }}
+
+        .main-subtitle {{
+            text-align: center;
+            color: var(--nba-muted);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
         }}
 
         h1 {{
             color: white;
-            font-weight: 850;
-            letter-spacing: -0.03em;
-            margin-bottom: 1.2rem;
+            font-weight: 900;
+            letter-spacing: -0.035em;
+            margin-bottom: 1.25rem;
         }}
 
         h2, h3 {{
             color: white;
-            font-weight: 800;
-            letter-spacing: -0.02em;
+            font-weight: 850;
+            letter-spacing: -0.025em;
+        }}
+
+        p, span, label {{
+            color: inherit;
         }}
 
         hr {{
             border: none;
             height: 1px;
-            background: linear-gradient(90deg, transparent, #C9082A, transparent);
-            margin: 1.5rem 0 2rem 0;
+            background: linear-gradient(90deg, transparent, rgba(201, 8, 42, .9), transparent);
+            margin: 1.3rem 0 1.7rem 0;
         }}
 
-        div[data-testid="stDataFrame"] {{
-            border: 1px solid rgba(201, 8, 42, 0.35);
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,.28);
+        [data-testid="stSidebar"] {{
+            background: linear-gradient(180deg, #17408B 0%, #103169 62%, #0A0A0A 100%);
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
         }}
 
-        div[data-testid="stVerticalBlockBorderWrapper"] {{
-            background: linear-gradient(135deg, rgba(23,64,139,.20), rgba(17,17,17,.95));
-            border: 1px solid rgba(201, 8, 42, 0.38);
-            border-radius: 18px;
-            padding: 1.15rem 1.25rem;
-            box-shadow: 0 12px 28px rgba(0,0,0,.32);
+        [data-testid="stSidebar"] > div:first-child {{
+            padding-top: 1rem;
+        }}
+
+        [data-testid="stSidebarNav"]::before {{
+            content: "🏀 NBA TCC \\A Classificação de posições";
+            white-space: pre-line;
+            display: block;
+            margin: 0.8rem 0.75rem 1.1rem 0.75rem;
+            padding: 1rem 0.85rem;
+            border-radius: 16px;
+            background: rgba(10, 10, 10, 0.32);
+            border: 1px solid rgba(255, 255, 255, 0.13);
+            color: white;
+            font-size: 0.92rem;
+            font-weight: 850;
+            line-height: 1.35;
+            text-align: center;
+            box-shadow: 0 12px 26px rgba(0, 0, 0, .28);
+        }}
+
+        [data-testid="stSidebarNav"] ul {{
+            padding-left: 0.55rem;
+            padding-right: 0.55rem;
+        }}
+
+        [data-testid="stSidebarNav"] ul li:first-child {{
+            display: none;
+        }}
+
+        [data-testid="stSidebarNav"] a {{
+            border-radius: 11px;
+            padding: 0.67rem 0.82rem;
+            margin-bottom: 0.28rem;
+            color: #F4F6FA;
+            font-weight: 700;
+            transition: all .18s ease-in-out;
+        }}
+
+        [data-testid="stSidebarNav"] a:hover {{
+            background: rgba(255, 255, 255, 0.13);
+            color: white;
+            transform: translateX(2px);
+        }}
+
+        [data-testid="stSidebarNav"] a[aria-current="page"] {{
+            background: rgba(255, 255, 255, 0.18);
+            color: white;
+            border-left: 4px solid var(--nba-red);
+            box-shadow: 0 7px 18px rgba(0, 0, 0, .25);
+        }}
+
+        [data-testid="stSidebar"] .stButton > button {{
+            width: 100%;
+            background: var(--nba-red);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 0.68rem 0.85rem;
+            font-weight: 800;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+        }}
+
+        [data-testid="stSidebar"] .stButton > button:hover {{
+            background: #A80723;
+            color: white;
+            border: none;
         }}
 
         .stButton > button {{
-            background: #C9082A;
+            background: var(--nba-red);
             color: white;
             border-radius: 10px;
             border: none;
-            font-weight: 700;
+            font-weight: 750;
         }}
 
         .stButton > button:hover {{
-            background: #a80723;
+            background: #A80723;
             color: white;
             border: none;
         }}
 
-        div[data-testid="stHorizontalBlock"] {{
-            gap: 1.35rem;
+        div[data-testid="stDataFrame"] {{
+            border: 1px solid rgba(201, 8, 42, 0.34);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, .28);
         }}
 
-        .small-muted {{
-            color: #bdbdbd;
-            font-size: 0.95rem;
+        div[data-testid="stVerticalBlockBorderWrapper"] {{
+            background: linear-gradient(135deg, rgba(23, 64, 139, .18), rgba(15, 17, 23, .96));
+            border: 1px solid rgba(201, 8, 42, 0.34);
+            border-radius: 18px;
+            padding: 1.12rem 1.22rem;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, .30);
+        }}
+
+        div[data-testid="stHorizontalBlock"] {{
+            gap: 1.2rem;
+        }}
+
+        div[data-testid="stTabs"] button {{
+            font-weight: 800;
+        }}
+
+        div[data-testid="stMetric"] {{
+            background: linear-gradient(135deg, rgba(23, 64, 139, .22), rgba(15, 17, 23, .96));
+            border: 1px solid rgba(201, 8, 42, 0.26);
+            border-radius: 16px;
+            padding: 1rem;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, .25);
+        }}
+
+        .section-note {{
+            color: var(--nba-muted);
+            font-size: 0.96rem;
+            margin-top: -0.6rem;
+            margin-bottom: 1rem;
+        }}
+
+        .plot-card-title {{
+            font-weight: 850;
+            color: white;
+            font-size: 1.04rem;
+            margin-bottom: 0.55rem;
+        }}
+
+        @media (max-width: 900px) {{
+            .block-container {{
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }}
+
+            .main-title {{
+                font-size: 2rem;
+            }}
         }}
         </style>
         """,

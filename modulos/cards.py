@@ -8,21 +8,21 @@ def estilo_card():
             "width": "100%",
             "height": "220px",
             "border-radius": "18px",
-            "background": "linear-gradient(135deg, #17408B 0%, #0A0A0A 80%)",
-            "border": "1.5px solid #C9082A",
-            "box-shadow": "0 10px 28px rgba(0,0,0,.45)",
+            "background": "linear-gradient(135deg, #17408B 0%, #0A0A0A 82%)",
+            "border": "1.6px solid #C9082A",
+            "box-shadow": "0 14px 30px rgba(0,0,0,.45)",
             "padding": "18px",
         },
         "title": {
             "font-size": "24px",
-            "font-weight": "800",
+            "font-weight": "850",
             "color": "white",
             "text-align": "center",
         },
         "text": {
             "font-size": "14px",
-            "font-weight": "500",
-            "color": "#d0d0d0",
+            "font-weight": "550",
+            "color": "#D5DAE3",
             "text-align": "center",
         },
     }
@@ -45,9 +45,11 @@ def cards():
             title="Modelagem",
             text="Comparação de modelos de Machine Learning para classificação das posições.",
             styles=estilo_card(),
-            key="model",
+            key="modelagem",
         ):
             st.switch_page("pages/2_Modelagem.py")
+
+    st.write("")
 
     col3, col4 = st.columns(2, gap="large")
 
@@ -63,8 +65,8 @@ def cards():
     with col4:
         if card(
             title="Avaliação de Desempenho",
-            text="Análise detalhada dos resultados com matriz de confusão e métricas finais de classificação.",
+            text="Matriz de confusão, curva ROC/AUC, métricas finais e importância das variáveis.",
             styles=estilo_card(),
-            key="mc",
+            key="melhores_modelos",
         ):
             st.switch_page("pages/4_Melhores_Modelos.py")
