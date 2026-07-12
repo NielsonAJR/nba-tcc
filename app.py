@@ -1,14 +1,11 @@
 import streamlit as st
 import base64
 import os
-import io
-import sys
 
 from modulos.theme import aplicar_tema
 from modulos.cards import cards
 
 os.environ["LIGHTGBM_VERBOSITY"] = "-1"
-sys.stderr = io.StringIO()
 
 st.set_page_config(page_title="NBA TCC", page_icon="🏀", layout="wide")
 

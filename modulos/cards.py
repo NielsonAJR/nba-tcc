@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_card import card
 
 def cards():
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
 
     with col1:
         if card(
@@ -61,6 +61,8 @@ def cards():
         ):
             st.switch_page("pages/2_Modelagem.py")
 
+    col3, col4 = st.columns(2)
+
     with col3:
         if card(
             title="Tunagem",
@@ -89,8 +91,6 @@ def cards():
         ):
             st.switch_page("pages/3_Tunagem.py")
         
-    col4, col5, col6 = st.columns(3)
-
     with col4:
         if card(
             title="Avaliação de Desempenho",
