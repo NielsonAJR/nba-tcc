@@ -10,3 +10,17 @@ arquivos/
 arquivos de estudos/
 
 .streamlit/secrets.toml
+
+# Arquivos de desenvolvimento
+modulos/tcc.ipynb
+modulos/tcc.py
+modulos/dados.py
+modulos/merge.py
+
+# Bases intermediárias
+data/dados.R
+data/nba_2026.csv
+data/nba_scraping.csv
+
+# Imagem avulsa
+Feature Importance.png
