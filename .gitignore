@@ -24,3 +24,4 @@ data/nba_scraping.csv
 
 # Imagem avulsa
 Feature Importance.png
+modulos/db.py
