@@ -1,0 +1,7 @@
+modelo_id,nome_modelo,arquivo
+rf,Random Forest Classifier,detalhe_modelo_rf.csv
+lr,Logistic Regression,detalhe_modelo_lr.csv
+lda,Linear Discriminant Analysis,detalhe_modelo_lda.csv
+nb,Naive Bayes,detalhe_modelo_nb.csv
+et,Extra Trees Classifier,detalhe_modelo_et.csv
+lightgbm,Light Gradient Boosting Machine,detalhe_modelo_lightgbm.csv
