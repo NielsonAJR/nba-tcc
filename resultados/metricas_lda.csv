@@ -1,0 +1,2 @@
+Model,Accuracy,AUC,Recall,Prec.,F1,Kappa,MCC
+Linear Discriminant Analysis,0.6686,0.8998,0.6686,0.6618,0.6646,0.5806,0.5809
