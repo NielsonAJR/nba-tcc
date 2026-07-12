@@ -7,160 +7,103 @@ NBA_PRETO = "#0A0A0A"
 
 
 def aplicar_tema():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background: {NBA_PRETO};
+            color: {NBA_BRANCO};
+        }}
 
-    st.markdown(f"""
-    <style>
+        [data-testid="stHeader"] {{
+            background: rgba(10, 10, 10, 0.92);
+        }}
 
-    /* ===========================
-       APP
-    =========================== */
+        [data-testid="stSidebar"] {{
+            background: linear-gradient(180deg, #17408B 0%, #0f2d63 100%);
+            border-right: 1px solid rgba(255,255,255,0.08);
+        }}
 
-    .stApp {{
-        background: {NBA_PRETO};
-        color: {NBA_BRANCO};
-    }}
+        [data-testid="stSidebar"] .stButton > button {{
+            background: #C9082A;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 0.65rem 0.9rem;
+            font-weight: 700;
+            box-shadow: 0 8px 18px rgba(0,0,0,.25);
+        }}
 
-    /* ===========================
-       SIDEBAR
-    =========================== */
+        [data-testid="stSidebar"] .stButton > button:hover {{
+            background: #a80723;
+            color: white;
+            border: none;
+        }}
 
-    section[data-testid="stSidebar"] {{
-        background:{NBA_AZUL};
-    }}
+        .block-container {{
+            max-width: 1280px;
+            padding-top: 2.2rem;
+            padding-bottom: 3rem;
+        }}
 
-    section[data-testid="stSidebar"] * {{
-        color:white !important;
-    }}
+        h1 {{
+            color: white;
+            font-weight: 850;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.2rem;
+        }}
 
-    [data-testid="stSidebarNav"] {{
-        display:none;
-    }}
+        h2, h3 {{
+            color: white;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }}
 
-    /* ===========================
-       TÍTULOS
-    =========================== */
+        hr {{
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #C9082A, transparent);
+            margin: 1.5rem 0 2rem 0;
+        }}
 
-    h1 {{
-        color:white;
-        text-align:center;
-        font-family:Arial Black,sans-serif;
-        letter-spacing:2px;
-    }}
+        div[data-testid="stDataFrame"] {{
+            border: 1px solid rgba(201, 8, 42, 0.35);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,.28);
+        }}
 
-    h2,h3 {{
-        color:{NBA_VERMELHO};
-        font-family:Arial Black,sans-serif;
-    }}
+        div[data-testid="stVerticalBlockBorderWrapper"] {{
+            background: linear-gradient(135deg, rgba(23,64,139,.20), rgba(17,17,17,.95));
+            border: 1px solid rgba(201, 8, 42, 0.38);
+            border-radius: 18px;
+            padding: 1.15rem 1.25rem;
+            box-shadow: 0 12px 28px rgba(0,0,0,.32);
+        }}
 
-    hr {{
-        border-color:{NBA_VERMELHO};
-    }}
+        .stButton > button {{
+            background: #C9082A;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            font-weight: 700;
+        }}
 
-    /* =======================================================
-       CARD
-       ======================================================= */
+        .stButton > button:hover {{
+            background: #a80723;
+            color: white;
+            border: none;
+        }}
 
-    div[data-testid="stVerticalBlockBorderWrapper"] {{
+        div[data-testid="stHorizontalBlock"] {{
+            gap: 1.35rem;
+        }}
 
-        border:2px solid {NBA_VERMELHO} !important;
-        border-radius:14px;
-
-        overflow:hidden;
-
-        transition:.25s;
-
-        box-shadow:0 6px 18px rgba(0,0,0,.45);
-
-    }}
-
-    div[data-testid="stVerticalBlockBorderWrapper"]>div{{
-
-        background:
-        linear-gradient(
-            135deg,
-            #214b9f 0%,
-            #193d84 35%,
-            #122754 70%,
-            #0a0a0a 100%
-        );
-
-        padding:28px;
-
-        height:100%;
-    }}
-
-    div[data-testid="stVerticalBlockBorderWrapper"]:hover{{
-        transform:translateY(-4px);
-        border-color:white !important;
-        box-shadow:0 12px 28px rgba(0,0,0,.6);
-    }}
-
-    /* ===========================
-       TEXTO DOS CARDS
-    =========================== */
-
-    .card-icon{{
-        font-size:50px;
-        text-align:center;
-        margin-bottom:18px;
-    }}
-
-    .card-title{{
-        color:white;
-        text-align:center;
-        font-size:30px;
-        font-weight:bold;
-        margin-bottom:15px;
-    }}
-
-    .card-text{{
-        color:#d0d0d0;
-        text-align:center;
-        font-size:15px;
-        line-height:1.5;
-        min-height:80px;
-    }}
-
-    /* ===========================
-       BOTÃO
-    =========================== */
-
-    .stButton{{
-        margin-top:18px;
-    }}
-
-    .stButton>button{{
-        width:100%;
-
-        background:{NBA_VERMELHO};
-
-        color:white;
-
-        border:none;
-
-        border-radius:8px;
-
-        font-weight:bold;
-
-        padding:12px;
-
-        transition:.2s;
-    }}
-
-    .stButton>button:hover{{
-        background:{NBA_AZUL};
-        color:white;
-    }}
-
-    /* ===========================
-       IMAGENS
-    =========================== */
-
-    [data-testid="stImage"] img{{
-        background:transparent !important;
-        mix-blend-mode:screen;
-        border-radius:8px;
-    }}
-
-    </style>
-    """, unsafe_allow_html=True)
+        .small-muted {{
+            color: #bdbdbd;
+            font-size: 0.95rem;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
