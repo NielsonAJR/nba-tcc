@@ -5,6 +5,7 @@ import seaborn as sns
 import streamlit as st
 
 from modulos.theme import aplicar_tema
+from modulos.interpretacao import bloco_interpretacao
 
 st.set_page_config(
     layout="wide",
@@ -156,6 +157,22 @@ with st.container(border=True):
         height=245,
     )
 
+posicao_mais_frequente = freq_pos.iloc[0]["Posição"]
+qtd_mais_frequente = freq_pos.iloc[0]["Frequência"]
+
+bloco_interpretacao(
+    "Interpretação da distribuição das posições",
+    f"""
+    A base possui jogadores distribuídos entre as cinco posições tradicionais da NBA.
+    A posição mais frequente é **{posicao_mais_frequente}**, com **{qtd_mais_frequente} jogadores**.
+
+    Essa etapa é importante porque permite verificar se existe desbalanceamento entre as classes.
+    Caso uma posição tenha muito mais jogadores que as demais, os modelos podem tender a favorecer essa classe durante a classificação.
+
+    No contexto do projeto, essa análise ajuda a entender se a dificuldade do modelo está relacionada apenas às variáveis escolhidas ou também à distribuição das posições na base.
+    """
+)
+
 st.header("2 Visualização Gráfica")
 st.markdown(
     '<p class="section-note">Gráficos para identificar padrões, dispersão e separabilidade entre posições.</p>',
@@ -225,6 +242,17 @@ ax.set_ylabel("Rebotes")
 ax.grid(alpha=0.25)
 ax.legend(facecolor=NBA_CARD, edgecolor=NBA_VERMELHO, labelcolor=NBA_BRANCO)
 exibir_figura(fig)
+
+bloco_interpretacao(
+    "Interpretação da separabilidade entre posições",
+    """
+    Este gráfico ajuda a visualizar se as posições apresentam padrões distintos de jogo.
+
+    Em geral, espera-se que **armadores** apareçam com maior número de assistências, enquanto **pivôs** e **alas-pivôs** tendem a apresentar maior número de rebotes.
+
+    Quando os pontos das classes ficam muito sobrepostos, isso indica que a separação entre posições não é simples. Essa sobreposição é esperada no basquete moderno, já que muitos jogadores atuam de forma híbrida e acumulam funções de diferentes posições.
+    """
+)
 
 st.subheader("2.5 Eficiência no Arremesso (FG%)")
 fig, ax = plt.subplots(figsize=(11.5, 5.2))
