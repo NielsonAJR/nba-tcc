@@ -106,7 +106,7 @@ def aplicar_tema():
         }}
 
         [data-testid="stSidebarNav"]::before {{
-            content: "🏀 NBA TCC\\AClassificação de Posições";
+            content: "🏀 NBA TCC\\A Classificação de Posições";
             white-space: pre-line;
             display: block;
             margin: 0.8rem 0.75rem 1.1rem 0.75rem;

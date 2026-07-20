@@ -29,7 +29,7 @@ def estilo_card():
 
 
 def cards():
-    col1, col2 = st.columns(2, gap="large")
+    col1, col2, col3 = st.columns(3, gap="large")
 
     with col1:
         if card(
@@ -49,10 +49,6 @@ def cards():
         ):
             st.switch_page("pages/2_Modelagem.py")
 
-    st.write("")
-
-    col3, col4 = st.columns(2, gap="large")
-
     with col3:
         if card(
             title="Tunagem",
@@ -62,6 +58,10 @@ def cards():
         ):
             st.switch_page("pages/3_Tunagem.py")
 
+    st.write("")
+
+    col4, col5, col6 = st.columns(3, gap="large")
+
     with col4:
         if card(
             title="Avaliação de Desempenho",
@@ -70,3 +70,21 @@ def cards():
             key="melhores_modelos",
         ):
             st.switch_page("pages/4_Melhores_Modelos.py")
+
+    with col5:
+        if card(
+            title="Modelo Final",
+            text="Regressão Logística Multinomial final, modelo salvo pelo PyCaret, coeficientes e odds ratios.",
+            styles=estilo_card(),
+            key="modelo_final",
+        ):
+            st.switch_page("pages/5_Modelo_Final.py")
+
+    with col6:
+        if card(
+            title="Predições do Modelo",
+            text="Aplicação do modelo final no conjunto de teste, mostrando acertos, erros e confiança das previsões.",
+            styles=estilo_card(),
+            key="predicoes_modelo",
+        ):
+            st.switch_page("pages/6_Predicoes.py")
