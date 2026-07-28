@@ -29,6 +29,19 @@ def estilo_card():
 
 
 def cards():
+    _, col_sobre, _ = st.columns([1, 2, 1], gap="large")
+
+    with col_sobre:
+        if card(
+            title="Introdução e Metodologia",
+            text="Contextualização do problema, objetivos e procedimentos metodológicos adotados no estudo.",
+            styles=estilo_card(),
+            key="sobre_projeto",
+        ):
+            st.switch_page("pages/0_Sobre_Projeto.py")
+
+    st.write("")
+
     col1, col2, col3 = st.columns(3, gap="large")
 
     with col1:
