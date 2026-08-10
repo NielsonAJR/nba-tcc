@@ -91,7 +91,26 @@ def exibir_figura(fig):
 df = load()
 df_aed = preparar_dados(df)
 
-st.header("1 Estatísticas Descritivas")
+
+st.header("1 Dataset")
+
+st.markdown(
+    '<p class="section-note">'
+    'Base de dados utilizada na análise exploratória, composta por informações '
+    'estatísticas dos jogadores da NBA.'
+    '</p>',
+    unsafe_allow_html=True,
+)
+
+with st.container(border=True):
+    st.dataframe(
+        df,
+        hide_index=True,
+        width="stretch",
+        height=420,
+    )
+
+st.header("2 Estatísticas Descritivas")
 st.markdown(
     '<p class="section-note">Resumo das principais variáveis utilizadas para caracterizar os jogadores.</p>',
     unsafe_allow_html=True,
@@ -137,7 +156,7 @@ resumo = (
     .T
 )
 
-st.subheader("1.1 Variáveis Numéricas")
+st.subheader("2.1 Variáveis Numéricas")
 with st.container(border=True):
     st.dataframe(
         resumo.round(2),
@@ -172,7 +191,7 @@ bloco_interpretacao(
 freq_pos = df_aed["Posicao"].value_counts().reset_index()
 freq_pos.columns = ["Posição", "Frequência"]
 
-st.subheader("1.2 Variáveis Categóricas")
+st.subheader("2.2 Variáveis Categóricas")
 with st.container(border=True):
     st.dataframe(
         freq_pos,
@@ -215,13 +234,13 @@ bloco_interpretacao(
 
 
 
-st.header("2 Visualização Gráfica")
+st.header("3 Visualização Gráfica")
 st.markdown(
     '<p class="section-note">Gráficos para identificar padrões, dispersão e separabilidade entre posições.</p>',
     unsafe_allow_html=True,
 )
 
-st.subheader("2.1 Distribuição de Idade")
+st.subheader("3.1 Distribuição de Idade")
 fig, ax = plt.subplots(figsize=(11.5, 5.2))
 ax.hist(df_aed["Age"], bins=15, color=NBA_AZUL, edgecolor=NBA_VERMELHO, linewidth=1.2)
 ax.set_title("Distribuição da Idade dos Jogadores", fontsize=15, pad=14)
@@ -246,7 +265,7 @@ bloco_interpretacao(
     """
 )
 
-st.subheader("2.2 Distribuição das Posições")
+st.subheader("3.2 Distribuição das Posições")
 fig, ax = plt.subplots(figsize=(11.5, 5.2))
 sns.countplot(
     data=df_aed,
@@ -276,7 +295,7 @@ bloco_interpretacao(
     """
 )
 
-st.subheader("2.3 Pontos por Posição")
+st.subheader("3.3 Pontos por Posição")
 fig, ax = plt.subplots(figsize=(11.5, 5.2))
 palette_nba = ["#17408B", "#C9082A", "#FFFFFF", "#1A5276", "#922B21"]
 sns.boxplot(
@@ -315,7 +334,7 @@ bloco_interpretacao(
     """
 )
 
-st.subheader("2.4 Separabilidade entre Posições")
+st.subheader("3.4 Separabilidade entre Posições")
 fig, ax = plt.subplots(figsize=(11.5, 5.2))
 palette_nba5 = ["#17408B", "#C9082A", "#FFFFFF", "#1A5276", "#922B21"]
 sns.scatterplot(
@@ -359,7 +378,7 @@ bloco_interpretacao(
 )
 
 
-st.subheader("2.5 Eficiência no Arremesso (FG%)")
+st.subheader("3.5 Eficiência no Arremesso (FG%)")
 fig, ax = plt.subplots(figsize=(11.5, 5.2))
 ax.hist(
     df_aed["Aproveitamento_Campo"].dropna(),
@@ -400,7 +419,7 @@ bloco_interpretacao(
     """
 )
 
-st.header("3 Correlação entre Variáveis Numéricas")
+st.header("4 Correlação entre Variáveis Numéricas")
 cols_corr = [
     "Age",
     "Pontos",

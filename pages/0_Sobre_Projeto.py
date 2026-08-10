@@ -1,6 +1,16 @@
 import streamlit as st
+import pandas as pd
 
 from modulos.theme import aplicar_tema
+
+@st.cache_data
+def carregar_base():
+    return pd.read_csv("data/nba_final.csv")
+
+df = carregar_base()
+
+n_observacoes = df.shape[0]
+n_variaveis = df.shape[1]
 
 
 st.set_page_config(
@@ -88,6 +98,32 @@ with st.container(border=True):
         """
     )
 
+st.subheader("Conjunto de dados")
+
+with st.container(border=True):
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.metric("Observações", f"{n_observacoes:,}".replace(",", "."))
+
+    with col2:
+        st.metric("Variáveis", n_variaveis)
+
+    with col3:
+        st.metric("Classes", df["Pos"].nunique() if "Pos" in df.columns else 5)
+
+    st.markdown(
+        """
+        O conjunto de dados utilizado na modelagem reúne as estatísticas de
+        desempenho e características físicas dos jogadores. Cada linha
+        representa um jogador, enquanto as colunas correspondem às variáveis
+        utilizadas na análise e à posição do atleta.
+
+        A variável resposta **Posição** possui cinco classes correspondentes às
+        posições tradicionais do basquete: PG, SG, SF, PF e C.
+        """
+    )
+
 st.subheader("Metodologia")
 
 etapa1, etapa2, etapa3 = st.columns(3, gap="large")
@@ -96,7 +132,7 @@ with etapa1:
     with st.container(border=True, height="stretch"):
         st.markdown("#### 1. Obtenção e preparação")
         st.markdown(
-            """
+            f"""
             As estatísticas da temporada **2025–26**, padronizadas por 36 minutos,
             foram coletadas da área de estatísticas da NBA. Informações de posição,
             altura e peso foram integradas à base, que passou por seleção, renomeação
