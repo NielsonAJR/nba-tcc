@@ -1,0 +1,51 @@
+﻿Player,Posicao_Real,Previsao_Modelo,Confianca_Modelo,Centroide_euclidean,Centroide_manhattan,Centroide_mahalanobis,Centroide_minkowski,Centroide_chebyshev,Voto_Majoritario,Decisao
+Javonte Green,SF,SG,0.59,SF,SF,SF,SF,SG,SF,Erro do modelo
+Jacob Toppin,SF,PF,0.8216,SF,SF,SF,SF,SF,SF,Erro do modelo
+Javonte Cooke,SG,PG,0.4998,PG,SG,SG,PG,PG,PG,Recomendação
+Karlo Matković,PF,C,0.7107,PF,PF,PF,PF,SF,PF,Erro do modelo
+Chris Boucher,SF,PF,0.6391,SF,C,SF,C,C,C,Recomendação
+Johnny Furphy,SG,SF,0.5324,SF,SF,SG,SF,SF,SF,Recomendação
+TyTy Washington Jr.,PG,SG,0.8734,PG,PG,PG,PG,PG,PG,Erro do modelo
+Duncan Robinson,SG,SF,0.4584,SF,SF,SF,SF,SF,SF,Recomendação
+Dalano Banton,PG,SG,0.8621,C,C,PG,C,C,C,Recomendação
+Trevon Scott,SF,PF,0.635,SF,SF,PF,SF,SF,SF,Erro do modelo
+Jamaree Bouyea,PG,SG,0.7348,PG,PG,PG,PG,PG,PG,Erro do modelo
+Miles Bridges,PF,SF,0.5147,PF,SG,PF,PF,PF,PF,Erro do modelo
+Svi Mykhailiuk,SF,SG,0.549,SF,SF,SF,SF,SF,SF,Erro do modelo
+Jaylon Tyson,SG,SF,0.642,PF,PF,PF,PF,SG,PF,Recomendação
+Olivier-Maxence Prosper,PF,SF,0.5373,PF,PF,PF,PF,PF,PF,Erro do modelo
+Antonio Reeves,SG,SF,0.694,SF,SF,SG,SF,PG,SF,Recomendação
+Devin Booker,SG,PG,0.4583,SG,SG,SG,SG,SG,SG,Erro do modelo
+Jalen Wilson,PF,SF,0.4963,SF,SF,SG,SF,SF,SF,Recomendação
+Bruce Brown,SF,SG,0.8175,PG,SF,SF,PG,PG,PG,Recomendação
+CJ Huntley,SF,PF,0.8697,SF,SF,SF,SF,SG,SF,Erro do modelo
+Blake Hinson,SF,PF,0.5308,PF,PF,SF,PF,PF,PF,Recomendação
+Isaiah Jackson,C,PF,0.5342,C,SF,C,C,SF,C,Erro do modelo
+Carter Bryant,PF,SF,0.4729,PF,SF,PF,PF,SF,PF,Erro do modelo
+Kyle Kuzma,PF,SF,0.4853,PF,PF,PF,PF,PF,PF,Erro do modelo
+Jaylen Wells,SG,SF,0.4951,SF,SG,SF,SF,SF,SF,Recomendação
+Josh Oduro,PF,C,0.5228,C,C,PF,C,PF,C,Recomendação
+Kasparas Jakučionis,PG,SG,0.714,PG,PG,PG,PG,PG,PG,Erro do modelo
+Cade Cunningham,SG,PG,0.5839,SG,SG,PG,SG,PG,SG,Erro do modelo
+Andersson Garcia,SF,PF,0.3993,C,C,C,C,C,C,Recomendação
+Emanuel Miller,PF,SG,0.531,SG,SG,SF,SF,SF,SF,Recomendação
+Tristen Newton,SG,SF,0.8817,SG,SG,SG,SG,SG,SG,Erro do modelo
+Sidy Cissoko,SF,SG,0.411,SF,SF,PF,SF,SF,SF,Erro do modelo
+Dario Saric,C,PF,0.5945,C,C,C,C,C,C,Erro do modelo
+Herbert Jones,PF,SG,0.5128,SF,PG,SF,SF,PG,SF,Recomendação
+Anthony Black,PG,SG,0.4824,SG,SG,SG,SG,SG,SG,Recomendação
+Jalen Johnson,PF,SF,0.6324,SG,SG,SG,SG,SG,SG,Recomendação
+Danny Wolf,PF,C,0.7514,PF,PF,PF,PF,PF,PF,Erro do modelo
+Chet Holmgren,PF,C,0.5554,PF,PF,PF,PF,C,PF,Erro do modelo
+Wendell Carter Jr.,PF,C,0.8759,PF,PF,PF,PF,PF,PF,Erro do modelo
+Egor Dëmin,PG,SG,0.4278,PG,PG,PG,PG,SG,PG,Erro do modelo
+Sean Pedulla,PG,SG,0.5652,PG,PG,PG,PG,PG,PG,Erro do modelo
+Donovan Mitchell,SG,PG,0.7405,SG,SG,SG,SG,SG,SG,Erro do modelo
+Spencer Jones,SF,PF,0.6185,SF,SF,PF,SF,SF,SF,Erro do modelo
+Dorian Finney-Smith,PF,SF,0.3822,C,C,SF,C,C,C,Recomendação
+Jerami Grant,PF,SF,0.6083,SG,SG,SG,SG,SG,SG,Recomendação
+Lauri Markkanen,SF,PF,0.5925,PF,PF,PF,PF,PF,PF,Recomendação
+Colby Jones,SG,C,0.858,SG,SG,SG,SG,SG,SG,Erro do modelo
+Ousmane Dieng,PF,SF,0.4865,PG,PG,PG,SG,SG,PG,Recomendação
+Will Riley,SF,SG,0.5031,SG,PF,SF,SG,SG,SG,Recomendação
+Brandon Clarke,PF,SF,0.6372,SF,SF,PF,PF,PF,PF,Erro do modelo

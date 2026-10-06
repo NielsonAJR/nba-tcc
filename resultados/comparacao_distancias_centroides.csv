@@ -1,9 +1,9 @@
 Player,Posicao_Real,Centroide_euclidean,Centroide_manhattan,Centroide_minkowski,Centroide_chebyshev,Centroide_mahalanobis
 Tristen Newton,SG,SF,SG,SF,PG,SF
-Giannis Antetokounmpo,PF,C,C,C,SF,SF
+Giannis Antetokounmpo,PF,C,C,SF,SF,SF
 Shai Gilgeous-Alexander,PG,PG,PG,PG,PG,SF
 Luka Dončić,PG,PG,PG,PG,PG,SF
-Alex Antetokounmpo,SF,PF,PF,PF,PG,SF
+Alex Antetokounmpo,SF,PF,PF,SF,PG,SF
 Ty Jerome,SG,PG,PG,PG,PG,PG
 Kawhi Leonard,SF,SF,SF,SF,PG,SF
 Stephen Curry,PG,PG,PG,PG,PG,PG
@@ -12,14 +12,14 @@ Joel Embiid,C,C,C,C,SF,PF
 Mark Sears,PG,PG,PG,PG,PG,SG
 Jaylen Brown,SF,PG,SF,PG,PG,SF
 Donovan Mitchell,SG,PG,PG,PG,PG,PG
-Anthony Edwards,SG,SF,SG,SF,PG,SF
+Anthony Edwards,SG,SF,SG,PG,PG,SF
 Nikola Jokić,C,C,C,C,SG,C
 Lauri Markkanen,SF,SF,PF,SF,SF,PF
 Devin Booker,SG,PG,PG,PG,PG,PG
 Michael Porter Jr.,SF,SF,SF,SF,SF,SF
 Jalen Brunson,SG,PG,PG,PG,PG,PG
 Tyrese Maxey,PG,PG,PG,PG,PG,PG
-Norman Powell,SF,SG,SG,SG,PG,SG
+Norman Powell,SF,SG,SG,SF,PG,SG
 Deni Avdija,SF,PG,SF,PG,PG,PG
 Pascal Siakam,PF,SF,SF,SF,SF,PF
 Trentyn Flowers,SF,PG,PG,PG,PG,SF
@@ -29,11 +29,11 @@ LaMelo Ball,PG,PG,PG,PG,PG,PG
 Keyonte George,PG,PG,PG,PG,PG,PG
 Kevin Durant,PF,SF,PF,SF,SF,PF
 Shaedon Sharpe,SG,PG,SG,PG,PG,SF
-Zion Williamson,PF,PF,SF,PF,C,PF
+Zion Williamson,PF,PF,SF,C,C,PF
 Cade Cunningham,SG,PG,PG,PG,PG,PG
 Trae Young,PG,PG,PG,PG,PG,PG
 Coby White,PG,PG,PG,PG,PG,PG
-Kristaps Porziņģis,PF,PF,PF,PF,PF,PF
+Kristaps Porziņģis,PF,PF,PF,C,PF,PF
 Jalen Duren,C,C,C,C,C,C
 Franz Wagner,SF,SF,SF,SF,SF,SF
 Jalen Green,SG,PG,PG,PG,PG,SG
@@ -41,7 +41,7 @@ Ja Morant,PG,PG,PG,PG,PG,PG
 James Harden,PG,PG,PG,PG,PG,PG
 Austin Reaves,SG,PG,PG,PG,PG,PG
 Jayson Tatum,SF,SF,PG,SF,C,SF
-Brandon Miller,SF,SF,SF,SF,PG,SF
+Brandon Miller,SF,SF,SF,PG,PG,SF
 Dillon Brooks,SF,SF,SF,SF,SG,SF
 Obi Toppin,PF,SF,SF,SF,PF,SF
 Tristan Vukcevic,C,PF,PF,PF,PF,SF
@@ -65,7 +65,7 @@ Darius Garland,PG,PG,PG,PG,PG,PG
 Cooper Flagg,SF,SF,SF,SF,SF,SF
 Jerami Grant,PF,SF,SF,SF,SF,SF
 Nickeil Alexander-Walker,SG,SG,SG,SG,SF,SG
-Bam Adebayo,C,PF,PF,PF,PF,C
+Bam Adebayo,C,PF,PF,C,PF,C
 Alperen Sengun,C,C,C,C,SF,C
 Zach LaVine,SG,SG,SG,SG,SF,SG
 Trey Murphy III,SF,SF,SF,SF,SF,SF
@@ -76,7 +76,7 @@ Alex Sarr,C,C,C,C,C,C
 De'Aaron Fox,PG,PG,PG,PG,PG,PG
 Desmond Bane,SG,SF,SF,SF,SF,SF
 Chet Holmgren,PF,C,C,C,C,SF
-DeMar DeRozan,PF,SG,SG,SG,SF,PF
+DeMar DeRozan,PF,SG,SG,SF,SF,PF
 Brandon Williams,PG,PG,PG,PG,PG,PG
 Kon Knueppel,SF,SF,SF,SF,SF,SF
 Bennedict Mathurin,SG,SF,SG,SF,SF,SG
@@ -140,13 +140,13 @@ Dylan Harper,SG,PG,SF,PG,PG,PG
 Tre Jones,PG,PG,PG,PG,PG,PG
 Naz Reid,C,PF,PF,PF,C,C
 Isaiah Joe,SG,SG,SG,SG,SG,SG
-DaQuan Jeffries,SG,SF,SF,SF,SF,SG
+DaQuan Jeffries,SG,SF,SF,SG,SF,SG
 Reed Sheppard,SG,PG,PG,PG,PG,SG
 Naji Marshall,SF,SF,SF,SF,SF,SF
 Chris Livingston,SF,SF,SF,SF,PF,SF
 Immanuel Quickley,PG,PG,PG,PG,PG,PG
 Bones Hyland,SG,PG,PG,PG,PG,PG
-Kyshawn George,SF,PG,PG,PG,SG,SF
+Kyshawn George,SF,PG,PG,SF,SG,SF
 Sandro Mamukelashvili,PF,PF,PF,PF,PF,PF
 Simone Fontecchio,SF,SF,SF,SF,SF,SF
 Tre Johnson,SG,SG,SG,SG,SG,SG
@@ -155,7 +155,7 @@ Andrew Wiggins,SF,SF,SF,SF,SF,SG
 LJ Cryer,PG,SG,SG,SG,SG,SG
 Thomas Bryant,C,C,C,C,C,C
 Micah Potter,C,PF,PF,PF,PF,PF
-OG Anunoby,SF,SF,SF,SF,PF,PF
+OG Anunoby,SF,SF,SF,PF,PF,PF
 Caleb Love,SG,SG,PG,SG,PG,SG
 Santi Aldama,PF,PF,PF,PF,PF,PF
 Leonard Miller,SF,PF,PF,PF,PF,SF
@@ -173,7 +173,7 @@ Joan Beringer,PF,C,C,C,C,C
 Kyle Kuzma,PF,SF,SF,SF,SF,SF
 Branden Carlson,C,C,C,C,C,PF
 Mac McClung,SG,SG,PG,SG,PG,SG
-Mark Williams,C,C,C,C,SF,C
+Mark Williams,C,C,C,SF,SF,C
 Jalen Smith,PF,C,C,C,C,C
 Peyton Watson,SG,SF,SF,SF,SF,SF
 Nick Smith Jr.,SG,SG,SG,SG,SG,SG
@@ -183,13 +183,13 @@ Johnny Juzang,SG,SF,SF,SF,SF,SF
 Onyeka Okongwu,C,PF,PF,PF,PF,PF
 Amen Thompson,PG,SF,SF,SF,SF,SF
 Kyle Filipowski,C,C,C,C,C,C
-Keshad Johnson,SF,SF,SF,SF,PF,SF
+Keshad Johnson,SF,SF,SF,PF,PF,SF
 Jordan Clarkson,SG,SG,SG,SG,SG,SG
 Brandin Podziemski,SG,SG,SG,SG,SG,SG
 Grant Nelson,PF,C,C,C,C,C
 MarJon Beauchamp,SF,SF,SF,SF,SF,SF
 Devin Carter,PG,PG,PG,PG,PG,PG
-Derrick White,SG,PG,PG,PG,SG,PG
+Derrick White,SG,PG,PG,SG,SG,PG
 Sam Merrill,SG,SG,SG,SG,SG,SG
 Jared McCain,SG,SG,SG,SG,SG,SG
 Julian Strawther,SG,SG,SF,SG,SG,SF
@@ -229,13 +229,13 @@ Miles McBride,PG,SG,SG,SG,SG,SG
 Noah Clowney,PF,SF,SF,SF,PF,SF
 Asa Newell,PF,PF,PF,PF,PF,SF
 Emanuel Miller,PF,SG,SG,SG,SF,SF
-John Poulakidas,SG,SG,SG,SG,SF,SG
+John Poulakidas,SG,SG,SG,SF,SF,SG
 Isaiah Collier,PG,PG,PG,PG,PG,PG
 Jarace Walker,PF,SF,SF,SF,PF,PF
 Jordan Miller,SF,SG,SG,SG,SF,SG
 Jabari Smith Jr.,PF,PF,SF,PF,PF,PF
 Terrence Shannon Jr.,SG,SG,SG,SG,SG,SF
-Gui Santos,PF,SF,SF,SF,SG,SF
+Gui Santos,PF,SF,SF,SG,SG,SF
 Kelly Oubre Jr.,SF,SF,SF,SF,SF,SF
 Bilal Coulibaly,SG,SF,SG,SF,SF,SG
 Eric Gordon,SG,SG,SF,SG,SG,SF
@@ -251,14 +251,14 @@ Cole Anthony,PG,PG,PG,PG,PG,PG
 DaRon Holmes II,PF,PF,PF,PF,PF,PF
 Collin Gillespie,PG,PG,PG,PG,PG,PG
 Quinten Post,PF,PF,PF,PF,PF,PF
-Myles Turner,C,PF,PF,PF,C,PF
+Myles Turner,C,PF,PF,C,C,PF
 Jamal Cain,PF,SF,SF,SF,SG,SF
 Isaiah Stewart,C,C,C,C,C,C
 Mikal Bridges,SF,SG,SG,SG,SF,SG
 Daniel Gafford,C,C,C,C,C,C
 Josh Minott,SF,SF,PF,SF,SF,SF
 Alondes Williams,SG,PF,SF,PF,PF,SG
-Cameron Payne,PG,PG,PG,PG,SG,PG
+Cameron Payne,PG,PG,PG,SG,SG,PG
 Tre Mann,PG,PG,PG,PG,PG,SG
 Tristan Enaruna,SF,SF,SF,SF,SF,SF
 Justin Champagnie,SF,PF,SF,PF,PF,SG
@@ -274,20 +274,20 @@ Zaccharie Risacher,SF,SF,SF,SF,SF,SF
 Nikola Jović,PF,SF,PF,SF,PF,PF
 Trey Alexander,SG,SG,SG,SG,SG,SF
 Kenrich Williams,SF,SF,SF,SF,SF,SF
-Nic Claxton,C,C,C,C,PF,PF
+Nic Claxton,C,C,C,PF,PF,PF
 Precious Achiuwa,C,C,C,C,C,C
 Rob Dillingham,PG,PG,PG,PG,PG,PG
 Harrison Ingram,SF,SF,PF,SF,SF,SF
 Max Christie,SG,SG,SG,SG,SG,SG
 E.J. Liddell,PF,PF,PF,PF,PF,PF
 Tyler Burton,SF,SF,SF,SF,SF,SF
-Sean Pedulla,PG,PG,PG,PG,C,PG
+Sean Pedulla,PG,PG,PG,SF,C,PG
 Haywood Highsmith,SF,SF,SG,SF,SF,SF
 Yanic Konan Niederhäuser,C,C,C,C,C,C
 Ronald Holland II,SF,SF,SF,SF,SG,SF
 Jusuf Nurkić,C,C,C,C,C,C
 Dalton Knecht,SF,SF,SF,SF,PF,SF
-Jaxson Hayes,C,C,C,C,SF,C
+Jaxson Hayes,C,C,C,SF,SF,C
 Blake Wesley,SG,PG,PG,PG,PG,PG
 Egor Dëmin,PG,SG,SG,SG,SF,SF
 Jamaree Bouyea,PG,SG,SG,SG,SG,SG
@@ -299,7 +299,7 @@ Svi Mykhailiuk,SF,SG,SG,SG,SG,SF
 Landry Shamet,SG,SG,SG,SG,SG,SG
 Bradley Beal,SG,SG,SG,SG,SG,SG
 Rui Hachimura,PF,SF,PF,SF,SF,PF
-Tari Eason,PF,SF,SF,SF,PF,SF
+Tari Eason,PF,SF,SF,PF,PF,SF
 Keegan Murray,SF,PF,PF,PF,PF,PF
 Kevin Love,C,C,C,C,C,C
 PJ Hall,C,C,C,C,PF,C
@@ -312,7 +312,7 @@ Tristan da Silva,SF,SF,SF,SF,SF,SF
 Donte DiVincenzo,SG,SG,SG,SG,SG,SG
 Cameron Johnson,PF,SF,SF,SF,SF,SF
 Trendon Watford,SF,PF,PF,PF,PF,PF
-Buddy Boeheim,SF,SG,SG,SG,C,SF
+Buddy Boeheim,SF,SG,SG,SF,C,SF
 Chaney Johnson,SF,PF,PF,PF,PF,C
 Aaron Holiday,PG,SG,SG,SG,SG,SG
 Jalen Wilson,PF,SF,SF,SF,SF,SF
@@ -330,10 +330,10 @@ Javonte Green,SF,SG,SG,SG,SG,SG
 Ousmane Dieng,PF,SF,SG,SF,SF,SF
 Taylor Hendricks,PF,PF,PF,PF,PF,SF
 Brandon Clarke,PF,PF,SF,PF,PF,SF
-Drew Timme,PF,PF,PF,PF,SF,PF
+Drew Timme,PF,PF,PF,SF,SF,PF
 Taurean Prince,PF,SG,SF,SG,SG,SG
 Jevon Carter,PG,SG,SG,SG,PG,SG
-Collin Murray-Boyles,PF,C,C,C,PF,C
+Collin Murray-Boyles,PF,C,C,PF,PF,C
 Luke Kennard,SG,SG,SG,SG,SF,SG
 Mohamed Diawara,SF,SF,SF,SF,SF,PF
 Brook Lopez,C,C,PF,C,C,PF
@@ -356,7 +356,7 @@ Julian Reese,PF,C,C,C,C,C
 Jeff Green,PF,SF,SF,SF,SF,PF
 Walter Clayton Jr.,PG,PG,PG,PG,PG,PG
 DeJon Jarreau,SG,PG,PG,PG,PG,PG
-Ausar Thompson,SF,PF,PF,PF,PG,SF
+Ausar Thompson,SF,PF,PF,SF,PG,SF
 Isaiah Hartenstein,C,C,C,C,C,C
 Bogdan Bogdanović,SG,SG,SG,SG,SF,SG
 Tyler Kolek,PG,PG,PG,PG,PG,PG
@@ -364,7 +364,7 @@ Christian Braun,SG,SF,SF,SF,SF,PF
 Kadary Richmond,SG,SG,SG,SG,PG,SG
 Derrick Jones Jr.,PF,SF,SF,SF,SF,SG
 Tyrese Martin,SG,SG,SG,SG,SG,SF
-Doug McDermott,PF,SG,SG,SG,SF,PF
+Doug McDermott,PF,SG,SG,SF,SF,PF
 Jordan Hawkins,SG,SG,SG,SG,SG,SG
 Nae'Qwan Tomlin,PF,PF,PF,PF,PF,SF
 Jose Alvarado,PG,PG,PG,PG,PG,PG
@@ -376,9 +376,9 @@ Kelly Olynyk,C,PF,PF,PF,PF,PF
 Jaylin Williams,C,PF,PF,PF,PF,PF
 Ja'Kobe Walter,SG,SG,SG,SG,SG,SG
 Kobe Brown,PF,PF,PF,PF,PF,PF
-Kobe Sanders,SG,SG,SG,SG,SF,SF
+Kobe Sanders,SG,SG,SG,SF,SF,SF
 Vince Williams Jr.,SG,PG,PG,PG,PG,PG
-Trayce Jackson-Davis,C,C,C,C,SF,C
+Trayce Jackson-Davis,C,C,C,SF,SF,C
 Carter Bryant,PF,PF,PF,PF,PF,SG
 Duop Reath,C,PF,PF,PF,PF,PF
 Matisse Thybulle,SG,SG,SG,SG,PG,SG
@@ -386,10 +386,10 @@ Jabari Walker,PF,PF,PF,PF,PF,PF
 Ben Saraf,SG,PG,PG,PG,PG,PG
 Cody Williams,SG,SG,SF,SG,SG,SF
 Tony Bradley,C,C,C,C,C,C
-Liam McNeeley,SF,SF,SF,SF,PF,SF
+Liam McNeeley,SF,SF,SF,PF,PF,SF
 RayJ Dennis,PG,PG,PG,PG,PG,PG
 John Tonje,SG,SG,SG,SG,SF,SG
-Dyson Daniels,PG,SF,SF,SF,SG,PG
+Dyson Daniels,PG,SF,SF,SG,SG,PG
 Jamir Watkins,SG,SF,SF,SF,SG,SF
 AJ Green,SG,SG,SG,SG,SF,SG
 Olivier Sarr,C,C,C,C,PF,C
@@ -397,7 +397,7 @@ Grant Williams,PF,PF,PF,PF,PF,PF
 Pacôme Dadiet,SG,SF,SF,SF,SF,PF
 Rasheer Fleming,PF,PF,PF,PF,PF,PF
 KJ Simpson,PG,PG,PG,PG,PG,PG
-AJ Johnson,SG,SG,SG,SG,PG,SG
+AJ Johnson,SG,SG,SG,PG,PG,SG
 Ryan Kalkbrenner,C,C,C,C,C,C
 Mouhamadou Gueye,PF,PF,PF,PF,PF,PF
 Taj Gibson,C,PF,PF,PF,PF,C
@@ -408,7 +408,7 @@ Taelon Peter,SG,SG,SG,SG,SG,SG
 Kasparas Jakučionis,PG,SG,SG,SG,SG,PG
 Keaton Wallace,PG,PG,PG,PG,PG,PG
 Skal Labissiere,PF,C,PF,C,C,PF
-Dru Smith,SG,SG,SG,SG,PG,PG
+Dru Smith,SG,SG,SG,PG,PG,PG
 Royce O'Neale,SF,SF,SF,SF,SF,PF
 Malachi Smith,SG,SG,SG,SG,SG,SG
 Pete Nance,PF,PF,PF,PF,C,PF
@@ -420,7 +420,7 @@ Ethan Thompson,SG,SG,SG,SG,SG,SG
 Alex Caruso,SG,SG,SG,SG,PG,SG
 Alex Morales,PG,PG,PG,PG,PG,PG
 Ryan Nembhard,PG,PG,PG,PG,PG,PG
-Tyler Smith,PF,PF,PF,PF,SF,SF
+Tyler Smith,PF,PF,PF,SF,SF,SF
 Khaman Maluach,C,C,C,C,C,C
 Anthony Gill,PF,PF,PF,PF,PF,PF
 Jeremy Sochan,PF,PF,PF,PF,PF,PF
@@ -441,7 +441,7 @@ Bruce Brown,SF,SG,SG,SG,SG,SG
 Nikola Topić,PG,PG,PG,PG,PG,PG
 Keon Ellis,SG,SG,SG,SG,SG,SG
 Dominick Barlow,PF,PF,PF,PF,PF,PF
-Ochai Agbaji,SG,SG,SG,SG,SF,SG
+Ochai Agbaji,SG,SG,SG,SF,SF,SG
 Kevin McCullar Jr.,SF,SF,SG,SF,PF,SF
 Cason Wallace,SG,SG,SG,SG,PG,SG
 Jalen Pickett,SG,SG,SG,SG,SG,PG
@@ -450,7 +450,7 @@ Miles Kelly,PG,SG,SG,SG,SG,SG
 Moussa Cisse,C,C,C,C,C,C
 Will Richard,SG,SG,SG,SG,SG,SG
 Dalen Terry,SG,SF,SF,SF,SF,PF
-Jae'Sean Tate,PF,PF,PF,PF,SF,SG
+Jae'Sean Tate,PF,PF,PF,SF,SF,SG
 Thanasis Antetokounmpo,SF,PF,PF,PF,PG,PF
 Yang Hansen,C,C,C,C,PF,C
 Jordan McLaughlin,PG,PG,PG,PG,PG,PG
@@ -485,7 +485,7 @@ CJ Huntley,SF,PF,PF,PF,C,PF
 Yuki Kawamura,PG,PG,PG,PG,PG,PG
 Jamal Shead,PG,PG,PG,PG,PG,PG
 Oso Ighodaro,PF,C,C,C,C,PF
-Colby Jones,SG,PF,SG,PF,C,PG
+Colby Jones,SG,PF,SG,C,C,PG
 Vladislav Goldin,C,C,C,C,C,C
 Larry Nance Jr.,PF,PF,PF,PF,PF,PF
 Yves Missi,C,C,C,C,C,C
@@ -494,7 +494,7 @@ Mitchell Robinson,C,C,C,C,C,C
 Micah Peavy,SG,SG,SF,SG,SG,PF
 Jahmai Mashack,SG,SG,SG,SG,SF,SG
 Lawson Lovering,C,C,C,C,C,PF
-Hunter Tyson,PF,PF,SF,PF,SG,PF
+Hunter Tyson,PF,PF,SF,SF,SG,PF
 Hunter Dickinson,C,PF,C,PF,PF,PF
 Orlando Robinson,C,PF,PF,PF,C,PF
 Jeremiah Robinson-Earl,C,PF,C,PF,PF,PF
@@ -502,7 +502,7 @@ Johnny Furphy,SG,PF,PF,PF,PF,SF
 Adem Bona,C,C,C,C,C,C
 Monte Morris,PG,SG,SG,SG,SG,PG
 Andre Jackson Jr.,SG,SG,SG,SG,SG,SF
-Toby Okani,SG,SF,SF,SF,C,SF
+Toby Okani,SG,SF,SF,PF,C,SF
 Josh Green,SG,SG,SG,SG,PF,SG
 Hunter Sallis,SG,PG,PG,PG,PG,PG
 Luke Travers,SG,SG,SF,SG,PG,SG
@@ -525,7 +525,7 @@ Steven Adams,C,C,C,C,C,C
 Jarred Vanderbilt,PF,PF,PF,PF,PF,SF
 Jericho Sims,PF,C,C,C,C,C
 Isaac Jones,PF,PF,PF,PF,C,PF
-Craig Porter Jr.,PG,PG,PG,PG,SG,PG
+Craig Porter Jr.,PG,PG,PG,SG,SG,PG
 Spencer Jones,SF,PF,SF,PF,PF,PF
 Kris Murray,SF,PF,PF,PF,PF,PF
 Bez Mbeng,SG,SG,SG,SG,SG,SG
@@ -536,7 +536,7 @@ Leaky Black,SF,SG,SG,SG,PF,SG
 Hayden Gray,SG,SG,SG,SG,SG,SG
 Xavier Tillman,PF,PF,PF,PF,C,PF
 Sion James,SG,SG,SG,SG,SG,SG
-TyTy Washington Jr.,PG,SG,PG,SG,C,PG
+TyTy Washington Jr.,PG,SG,PG,SF,C,PG
 Ariel Hukporti,C,C,C,C,C,C
 Colin Castleton,C,C,C,C,C,C
 Isaiah Stevens,PG,PG,PG,PG,PG,PG
@@ -547,8 +547,8 @@ Dillon Jones,SF,SG,SG,SG,SG,PF
 Mo Bamba,C,C,C,C,C,C
 Nicolas Batum,PF,PF,SF,PF,PF,PF
 Chris Boucher,SF,PF,PF,PF,C,SG
-John Konchar,SG,PF,PF,PF,SG,SG
-James Wiseman,C,C,C,C,PF,PF
+John Konchar,SG,PF,PF,SG,SG,SG
+James Wiseman,C,C,C,PF,PF,PF
 Lonzo Ball,PG,PG,PG,PG,SG,PG
 Chris Paul,PG,PG,PG,PG,PG,PG
 Amari Williams,PF,C,C,C,C,C
@@ -556,8 +556,8 @@ Christian Koloko,C,C,PF,C,C,PF
 Tyus Jones,PG,SG,PG,SG,SG,PG
 Dorian Finney-Smith,PF,SG,SF,SG,SG,PF
 Brooks Barnhizer,SG,PF,PF,PF,PF,PF
-Dalano Banton,PG,PG,PG,PG,C,PG
-N'Faly Dante,C,C,C,C,PG,C
+Dalano Banton,PG,PG,PG,PF,C,PG
+N'Faly Dante,C,C,C,PF,PG,C
 Gary Harris,SG,SG,SG,SG,PF,SG
 Max Shulga,SG,SG,SG,SG,SG,SG
 Kevon Looney,C,C,C,C,C,C
@@ -567,17 +567,17 @@ Johni Broome,C,PF,C,PF,PG,C
 Mason Plumlee,C,C,C,C,C,C
 Nigel Hayes-Davis,SF,PF,PF,PF,PF,PF
 Wendell Moore Jr.,SG,PF,SG,PF,PF,SG
-Bismack Biyombo,C,PF,PF,PF,C,PF
+Bismack Biyombo,C,PF,PF,C,C,PF
 Trey Jemison III,C,C,C,C,C,C
 Andersson Garcia,SF,PF,PF,PF,SG,PF
 Chris Mañon,SG,SG,SG,SG,PG,SG
 Kyle Lowry,PG,SG,SG,SG,PG,PG
 Cody Martin,SF,PF,SG,PF,SG,SF
-Dario Saric,C,PF,SF,PF,PG,PF
+Dario Saric,C,PF,SF,SG,PG,PF
 Markelle Fultz,PG,PG,PG,PG,C,PG
 Drew Peterson,PF,SG,SF,SG,PG,PF
 Jahmyl Telfort,PF,SG,SF,SG,PG,SF
 Chucky Hepburn,PG,PG,PG,PG,PG,PG
-Darius Brown,SG,SG,SG,SG,SF,SG
+Darius Brown,SG,SG,SG,PF,SF,SG
 Noa Essengue,PF,SG,SG,SG,PG,SG
 Tosan Evbuomwan,SF,PF,PF,PF,PG,SF
