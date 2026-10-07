@@ -29,7 +29,7 @@ def estilo_card():
 
 
 def cards():
-    _, col_sobre, _ = st.columns([1, 2, 1], gap="large")
+    col_sobre, col1, col2 = st.columns(3, gap="large")
 
     with col_sobre:
         if card(
@@ -39,10 +39,6 @@ def cards():
             key="sobre_projeto",
         ):
             st.switch_page("pages/0_Sobre_Projeto.py")
-
-    st.write("")
-
-    col1, col2, col3 = st.columns(3, gap="large")
 
     with col1:
         if card(
@@ -62,6 +58,10 @@ def cards():
         ):
             st.switch_page("pages/2_Modelagem.py")
 
+    st.write("")
+
+    col3, col4, col5 = st.columns(3, gap="large")
+
     with col3:
         if card(
             title="Tunagem",
@@ -70,10 +70,6 @@ def cards():
             key="tunagem",
         ):
             st.switch_page("pages/3_Tunagem.py")
-
-    st.write("")
-
-    col4, col5, col6 = st.columns(3, gap="large")
 
     with col4:
         if card(
@@ -93,6 +89,10 @@ def cards():
         ):
             st.switch_page("pages/5_Modelo_Final.py")
 
+    st.write("")
+
+    col6, col7 = st.columns(2, gap="large")
+
     with col6:
         if card(
             title="Predições do Modelo",
@@ -101,3 +101,13 @@ def cards():
             key="predicoes_modelo",
         ):
             st.switch_page("pages/6_Predicoes.py")
+
+    with col7:
+
+        if card(
+            title="Análise por Centróides",
+            text="Análise dos perfis posicionais por meio de centróides e múltiplas métricas de distância, identificando proximidades e possíveis recomendações.",
+            styles=estilo_card(),
+            key="analise_centroides",
+        ):
+            st.switch_page("pages/7_Centroides.py")
